@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Simulador de partidas</string>
+    <string name="botao_gera_jogos">Botao gera jogos</string>
+    <string name="cd_home_team">Time Mandante</string>
 </resources>
