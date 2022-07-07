@@ -60,6 +60,7 @@
                 android:contentDescription="@string/cd_home_team"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                tools:ignore="ImageContrastCheck"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -104,18 +105,16 @@
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
-                app:layout_constraintEnd_toStartOf="@+id/tvVersus"
                 app:layout_constraintStart_toEndOf="@+id/ivHomeTeam"
                 app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
-                tools:text="99" />
+                tools:text="99"/>
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvVersus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="VS"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="@string/txt_versus"
                 app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +159,6 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeam"
                 app:layout_constraintEnd_toStartOf="@+id/ivAwayTeam"
-                app:layout_constraintStart_toEndOf="@+id/tvVersus"
                 app:layout_constraintTop_toTopOf="@+id/ivAwayTeam"
                 tools:text="99" />
         </androidx.constraintlayout.widget.ConstraintLayout>
