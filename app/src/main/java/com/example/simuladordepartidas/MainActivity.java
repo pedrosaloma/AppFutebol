@@ -16,6 +16,7 @@ import com.example.simuladordepartidas.databinding.ActivityMainBinding;
 import com.example.simuladordepartidas.domain.Jogo;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -30,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private GitHubApi matchesApi;
-    private JogosAdapter jogosAdapter;
-    //private MatchesAdapter matchesAdapter = new MatchesAdapter(Collections.emptyList());
+    private JogosAdapter jogosAdapter = new JogosAdapter(Collections.emptyList());
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupMatchesList() {
         binding.RCVJogos.setHasFixedSize(true);
         binding.RCVJogos.setLayoutManager(new LinearLayoutManager(this)); // aguarda um contexto
+        binding.RCVJogos.setAdapter(jogosAdapter);
         matchesApi();
     }
 

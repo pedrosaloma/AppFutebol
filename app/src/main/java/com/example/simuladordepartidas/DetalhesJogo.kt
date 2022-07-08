@@ -36,12 +36,14 @@ class DetalhesJogo : AppCompatActivity() {
                 binding.tvHomeTeamName.text = it.mandante.nome
                 Glide.with(this).load(it.mandante.imagem).into(binding.ivHomeTeam)
                 binding.rbHomeTeamStars.rating = it.mandante.estrelas.toFloat()
+                binding.tvHomeTeamScore.text = it.mandante.placar.toString()
             }
 
             if (it.visitante.placar != null) {
                 binding.tvAwayTeamName.text = it.visitante.nome
                 Glide.with(this).load(it.visitante.imagem).into(binding.ivAwayTeam)
                 binding.rbAwayTeamStars.rating = it.visitante.estrelas.toFloat()
+                binding.tvAwayTeamScore.text = it.visitante.placar.toString()
             }
         }
     }

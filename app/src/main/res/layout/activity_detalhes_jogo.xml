@@ -102,12 +102,13 @@
                 android:id="@+id/tvHomeTeamScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
                 app:layout_constraintStart_toEndOf="@+id/ivHomeTeam"
                 app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
-                tools:text="99"/>
+                tools:text="99" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvVersus"
@@ -155,6 +156,7 @@
                 android:id="@+id/tvAwayTeamScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeam"
